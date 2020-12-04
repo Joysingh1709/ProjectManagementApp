@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>HERE WE are ON a CallBack Page</h1>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            console.log('DOM fully loaded and parsed');
+
+            fetch('http://localhost:3000/get-token', {
+                method: 'POST'
+            })
+            .then((res) => res.json())
+            .then((r) => {
+                localStorage.setItem('_session', JSON.stringify(r._data));
+            })
+        });
+    </script>
+</body>
+
+</html>

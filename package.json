@@ -1,0 +1,27 @@
+{
+  "name": "oauth-flow-sample-node",
+  "version": "1.0.1",
+  "main": "auth.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TaylorKrusen/oauth-flow-sample-node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TaylorKrusen/oauth-flow-sample-node/issues"
+  },
+  "homepage": "https://github.com/TaylorKrusen/oauth-flow-sample-node#readme",
+  "description": "",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.16.2",
+    "nodemon": "^1.17.4",
+    "querystring": "^0.2.0",
+    "smartsheet": "^1.4.2"
+  }
+}
